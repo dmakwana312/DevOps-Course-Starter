@@ -6,27 +6,37 @@
     <h1 class="display-4">To-Do App</h1>
     <p class="lead">Just another to-do app.</p>
   </div>
+  <h2>Items</h2>
+  <div class="row">
+    <div class="mx-auto">
+      <form class="form-horizontal" action="/addToDo" method="POST">
+        <div class="form-row align-items-center">
+
+          <div class="form-group mb-2 form-check-inline">
+            <label for="to_do_title" class="font-weight-bold col-sm-6">Create To-Do Item:</label>
+            <input type="text" class="form-control" id="to_do_title" name="to_do_title"
+              placeholder="Enter Title of To-Do">
+          </div>
+          <button type="submit" class="btn btn-success mb-2">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-md-12">
-      <h2>Items</h2>
 
-      <form action="/addToDo" method="post">
-        <input type="text" id="to_do_title" name="to_do_title" placeholder="Title of To-Do"> <br>
-        <button type="submit">Submit</button>
-      </form>
-      
-      <ul class="list-group mb-4">
+      <ul class="list-group-flush mb-4">
         <!-- List the todo items here -->
 
         {% for item in items %}
-          <li>
-            <input class="form-check-input" type="checkbox" value="{{ item.id }}" id="status_{{ item.id }}" {% if item.status == 'Complete' %} checked {% endif %} onchange="statusCheckBoxChange('{{ item.id }}')"/>
+          <li class="list-group-item ">
+            <input class="form-check-input me-1" type="checkbox" value="{{ item.id }}" id="status_{{ item.id }}" {% if
+              item.status=='Complete' %} checked {% endif %} onchange="statusCheckBoxChange('{{ item.id }}')" />
             {{ item.title }}
           </li>
         {% endfor %}
 
-      </ul>
     </div>
   </div>
 {% endblock %}
