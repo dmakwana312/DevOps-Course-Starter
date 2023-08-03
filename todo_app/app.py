@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, request
 
 from todo_app.flask_config import Config
-from todo_app.data.session_items import get_items, add_item, get_item, save_item
+from todo_app.data.session_items import get_items, add_item, get_item, save_item, delete_item
 import operator
 
 app = Flask(__name__)
@@ -32,4 +32,12 @@ def markComplete():
     todo_item['status'] = status
     save_item(todo_item)
 
-    return redirect('/')
+    return '', 200
+
+@app.route('/deleteItem', methods=['POST'])
+def deleteItem():
+    item_id = request.form.get('itemId')
+    
+    delete_item(item_id)
+
+    return '', 200
