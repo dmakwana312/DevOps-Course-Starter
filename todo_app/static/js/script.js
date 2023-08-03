@@ -9,6 +9,23 @@ function statusCheckBoxChange(todoItemId) {
             itemId: todoItemId,
             status: todoItemStatus
         }
+    })
+    .always(function() {
+        window.location.href="/"
     });
 
 }
+
+function deleteItem(todoItemId) {
+    $.ajax({
+        url: "/deleteItem",
+        type: 'POST',
+        data: {
+            itemId: todoItemId
+        }
+    })
+    .always(function() {
+        window.location.href="/"
+    });
+}
+
