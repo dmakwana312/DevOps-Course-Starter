@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request
 
 from todo_app.flask_config import Config
 from todo_app.data.session_items import get_items, add_item, get_item, save_item
+import operator
 
 app = Flask(__name__)
 app.config.from_object(Config())
@@ -9,7 +10,7 @@ app.config.from_object(Config())
 
 @app.route('/')
 def index():
-    return render_template('index.html', items=get_items())
+    return render_template('index.html', items=sorted(get_items(), key=lambda k : k['status'], reverse=True))
 
 @app.route('/addToDo', methods=['POST'])
 def add_to_do():
@@ -31,5 +32,4 @@ def markComplete():
     todo_item['status'] = status
     save_item(todo_item)
 
-    return '', 200
-
+    return redirect('/')
