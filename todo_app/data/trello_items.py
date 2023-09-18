@@ -1,5 +1,6 @@
 import requests
 import todo_app.data.trello_config as config
+from todo_app.data.Item import Item
 
 def build_url(endpoint):
     return config.BASE_URL + endpoint
@@ -26,7 +27,7 @@ def get_items():
     for list in response_json:
         if list['cards'] != []:
             for card in list['cards']:
-                items.append( { 'id': card['id'], 'status': 'Complete' if list['name'] == config.DONE_LIST_NAME else "Not Started" , 'title': card['name'] })
+                items.append(Item.from_trello_card(card, list))
 
     return items
 
@@ -42,19 +43,19 @@ def get_lists():
     response = requests.get(url, params=build_params())
     return response.json()
 
-def get_list_id(name):
+def get_list(name):
     """
-    Fetches the id of the list.
+    Fetches the list
 
     Returns:
-        string: The id of the list requested
+        list: The list with name requested
     """
 
     all_lists = get_lists()
 
     for list in all_lists:
         if list['name'] == name:
-            return list['id']
+            return list
 
     return None
 
@@ -63,26 +64,26 @@ def mark_complete(id):
     Moves an item in the 'To Do' list to the 'Done' list
 
     Returns:
-        boolean: True or False based on outcome of API call
+        item: The saved item
     """
 
-    done_list_id = get_list_id(config.DONE_LIST_NAME)
+    done_list = get_list(config.DONE_LIST_NAME)
     url = build_url('cards/' + id)
-    response = requests.put(url, params=build_params({ 'idList':  done_list_id }))
-    return response.status_code == 200
+    response = requests.put(url, params=build_params({ 'idList':  done_list['id'] }))
+    return Item.from_trello_card(response.json(), done_list)
 
 def mark_incomplete(id):
     """
     Moves an item in the 'Done' list to the 'To Do' list
 
     Returns:
-        boolean: True or False based on outcome of API call
+        item: The saved item
     """
 
-    to_do_list_id = get_list_id(config.TO_DO_LIST_NAME)
+    to_do_list = get_list(config.TO_DO_LIST_NAME)
     url = build_url('cards/' + id)
-    response = requests.put(url, params=build_params({ 'idList':  to_do_list_id }))
-    return response.status_code == 200
+    response = requests.put(url, params=build_params({ 'idList':  to_do_list['id'] }))
+    return Item.from_trello_card(response.json(), to_do_list)
 
 def delete_item(id):
     """
@@ -101,12 +102,12 @@ def add_item(name):
     Creates an item
 
     Returns:
-        boolean: True or False based on outcome of API call
+        item: The saved item
     """
 
-    to_do_list_id = get_list_id(config.TO_DO_LIST_NAME)
+    to_do_list = get_list(config.TO_DO_LIST_NAME)
     url = build_url('cards/')
-    response = requests.post(url, params=build_params({ 'idList':  to_do_list_id, 'name': name }))
-    return response.status_code == 200
+    response = requests.post(url, params=build_params({ 'idList':  to_do_list['id'], 'name': name }))
+    return Item.from_trello_card(response.json(), to_do_list)
 
 
