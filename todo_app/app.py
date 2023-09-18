@@ -8,7 +8,7 @@ app.config.from_object(Config())
 
 @app.route('/')
 def index():
-    return render_template('index.html', items=get_items())
+    return render_template('index.html', items=sorted(get_items(), key=lambda k : k.status, reverse=True))
 
 @app.route('/addToDo', methods=['POST'])
 def add_to_do():
