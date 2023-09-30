@@ -67,3 +67,9 @@ You should see output similar to the following:
  * Debugger PIN: 226-556-590
 ```
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
+
+## Running Tests
+
+Tests can be run from the terminal by running `poetry run pytest`
+
+You can also run tests individually within VSCode by following the instructions on [this page](https://code.visualstudio.com/docs/python/testing#_configure-tests)
