@@ -3,10 +3,10 @@ import todo_app.data.trello_config as config
 from todo_app.data.Item import Item
 
 def build_url(endpoint):
-    return config.BASE_URL + endpoint
+    return config.get_base_url() + endpoint
 
 def build_params(additional_params = {}):
-    default_params = { 'key': config.API_KEY, 'token': config.API_TOKEN }
+    default_params = { 'key': config.get_api_key(), 'token': config.get_api_token() }
     default_params.update(additional_params)
     return default_params
 
@@ -18,7 +18,7 @@ def get_items():
         list: The list of saved items.
     """
 
-    url = build_url('boards/' + config.BOARD_ID + '/lists?cards=open')
+    url = build_url('boards/' + config.get_board_id() + '/lists?cards=open')
     response = requests.get(url, params=build_params())
     response_json = response.json()
 
@@ -39,7 +39,7 @@ def get_lists():
         list: The list of Trello lists
     """
 
-    url = build_url('boards/' + config.BOARD_ID + '/lists')
+    url = build_url('boards/' + config.get_board_id() + '/lists')
     response = requests.get(url, params=build_params())
     return response.json()
 
