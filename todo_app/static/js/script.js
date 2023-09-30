@@ -3,7 +3,7 @@ function statusCheckBoxChange(todoItemId) {
     var todoItemStatus = $(checkBoxId).is(':checked')
 
     $.ajax({
-        url: "/markComplete",
+        url: "/complete_item",
         type: 'POST',
         data: {
             itemId: todoItemId,

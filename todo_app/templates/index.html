@@ -32,8 +32,8 @@
         {% for item in items %}
           <li class="list-group-item d-flex justify-content-between align-items-center">
             <input class="form-check-input me-1" type="checkbox" value="{{ item.id }}" id="status_{{ item.id }}" {% if
-              item.status=='Complete' %} checked {% endif %} onchange="statusCheckBoxChange('{{ item.id }}')" />
-            {{ item.title }}
+              item.status=='Done' %} checked {% endif %} onchange="statusCheckBoxChange('{{ item.id }}')" />
+            {{ item.name }}
             <button type="button" class="btn btn-danger" onclick="deleteItem('{{ item.id }}')">Delete</button>
           </li>
         {% endfor %}
