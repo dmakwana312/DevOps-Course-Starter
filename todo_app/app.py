@@ -2,13 +2,15 @@ from flask import Flask, render_template, redirect, request
 
 from todo_app.flask_config import Config
 from todo_app.data.trello_items import get_items, add_item, mark_complete, mark_incomplete, delete_item
+from todo_app.data.view_model import ViewModel
 
 app = Flask(__name__)
 app.config.from_object(Config())
 
 @app.route('/')
 def index():
-    return render_template('index.html', items=sorted(get_items(), key=lambda k : k.status, reverse=True))
+    item_view_model = ViewModel(sorted(get_items(), key=lambda k : k.status, reverse=True))
+    return render_template('index.html', view_model=item_view_model)
 
 @app.route('/addToDo', methods=['POST'])
 def add_to_do():
