@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, request
 
 from todo_app.flask_config import Config
 from todo_app.data.trello_items import get_items, add_item, mark_complete, mark_incomplete, delete_item
-from todo_app.data.view_model import ViewModel
+from todo_app.view_model import ViewModel
 
 app = Flask(__name__)
 app.config.from_object(Config())
