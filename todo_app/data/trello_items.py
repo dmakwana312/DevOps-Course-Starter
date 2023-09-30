@@ -95,7 +95,7 @@ def delete_item(id):
 
     url = build_url('cards/' + id)
     response = requests.delete(url, params=build_params())
-    return response.status_code == 200
+    return response.ok
 
 def add_item(name):
     """
