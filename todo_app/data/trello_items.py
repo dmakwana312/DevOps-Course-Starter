@@ -25,9 +25,8 @@ def get_items():
     items = []
 
     for list in response_json:
-        if list['cards'] != []:
-            for card in list['cards']:
-                items.append(Item.from_trello_card(card, list))
+        for card in list['cards']:
+            items.append(Item.from_trello_card(card, list))
 
     return items
 

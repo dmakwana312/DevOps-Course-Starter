@@ -33,7 +33,7 @@ def create_app():
 
     def get_response_code(success):
         if success:
-            return 200
+            return 201
         else:
             return 500
         
