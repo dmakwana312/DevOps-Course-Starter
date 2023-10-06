@@ -30,7 +30,7 @@
         <!-- List the todo items here -->
 
         {% for item in view_model.todo_items %}
-          <li class="list-group-item d-flex justify-content-between align-items-center">
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="item_{{ item.id }}">
             <input class="form-check-input me-1" type="checkbox" value="{{ item.id }}" id="status_{{ item.id }}" {% if
               item.status=='Done' %} checked {% endif %} onchange="statusCheckBoxChange('{{ item.id }}')" />
             {{ item.name }}
@@ -49,7 +49,7 @@
         <!-- List the todo items here -->
 
         {% for item in view_model.done_items %}
-          <li class="list-group-item d-flex justify-content-between align-items-center">
+          <li class="list-group-item d-flex justify-content-between align-items-center" id="item_{{ item.id }}">
             <input class="form-check-input me-1" type="checkbox" value="{{ item.id }}" id="status_{{ item.id }}" {% if
               item.status=='Done' %} checked {% endif %} onchange="statusCheckBoxChange('{{ item.id }}')" />
             {{ item.name }}
