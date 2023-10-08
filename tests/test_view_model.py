@@ -70,6 +70,7 @@ def test_view_model_should_show_all_done_items_when_no_items_done():
 
 def test_view_model_should_show_all_done_items_when_3_items_done():
     items = [Item(i, 'Task', datetime.now(), DONE_LIST_NAME) for i in range(1, 4)]
+    items.append(Item(10, 'Task', datetime.now(), TO_DO_LIST_NAME))
 
     view_model = ViewModel(items)
 
@@ -95,7 +96,9 @@ def test_view_model_recent_done_items_when_1_item_modified_today():
 
     view_model = ViewModel(items)
 
-    assert len(view_model.recent_done_items) == 1
+    assert view_model.recent_done_items == [
+        Item(2, 'Done Today', datetime(2023, 1, 1, 12, 00, 00), DONE_LIST_NAME)
+    ]
 
 @freeze_time("2023-01-01 12:00:00")
 def test_view_model_old_done_items_when_1_item_modified_today():
@@ -107,4 +110,6 @@ def test_view_model_old_done_items_when_1_item_modified_today():
 
     view_model = ViewModel(items)
 
-    assert len(view_model.older_done_items) == 1
+    assert view_model.older_done_items == [
+        Item(1, 'Done Yesterday', datetime(2022, 12, 31, 12, 00, 00), DONE_LIST_NAME)
+    ]
