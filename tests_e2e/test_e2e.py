@@ -56,6 +56,7 @@ def driver():
     with webdriver.Chrome() as driver:
         yield driver
 
+@pytest.mark.order1
 def test_task_journey_creation(driver, app_with_temp_board):
     driver.get('http://localhost:5000/')
 
@@ -76,7 +77,7 @@ def test_task_journey_creation(driver, app_with_temp_board):
         assert check_element_exists_by_id(driver, item_id)
         assert not check_item_status(driver, item_id)
 
-
+@pytest.mark.order2
 def test_task_journey_mark_complete(driver, app_with_temp_board):
     driver.get('http://localhost:5000/')
 
@@ -95,6 +96,7 @@ def test_task_journey_mark_complete(driver, app_with_temp_board):
     assert check_element_exists_by_id(driver, item_id)
     assert check_item_status(driver, item_id)
 
+@pytest.mark.order3
 def test_task_journey_mark_incomplete(driver, app_with_temp_board):
     driver.get('http://localhost:5000/')
 
@@ -114,6 +116,7 @@ def test_task_journey_mark_incomplete(driver, app_with_temp_board):
     assert check_element_exists_by_id(driver, item_id)
     assert not check_item_status(driver, item_id)
 
+@pytest.mark.order3
 def test_task_journey_mark_delete(driver, app_with_temp_board):
     driver.get('http://localhost:5000/')
     

@@ -5,7 +5,7 @@ import pytest
 import requests
 import os
 
-mocked_items = {'to_do_items': [{'id': '123', 'name': 'Test card'}], 'done_items': []}
+mocked_items = {'to_do_items': [{'id': '123', 'name': 'Test card', 'dateLastActivity': '2023-01-01T12:00:00.000Z'}], 'done_items': []}
 
 @pytest.fixture
 def client():
@@ -48,20 +48,21 @@ def stub(url, params={}):
         fake_response_data = [
             {
                 'id': '123abc',
-                'name': 'To Do'
+                'name': 'To Do',
             },
             {
                 'id': '456def',
-                'name': 'Done'
+                'name': 'Done',
             }]
         return StubResponse(fake_response_data)
     
     elif url == f'https://api.trello.com/1/cards/':
-        mocked_items['to_do_items'].append({'id': '456', 'name': 'Created in Integration Test'})
+        mocked_items['to_do_items'].append({'id': '456', 'name': 'Created in Integration Test', 'dateLastActivity': '2023-01-01T12:00:00.000Z',})
         fake_response_data = {
             'id': '456', 
             'name': 'Created in Integration Test',
-            'idList': '123abc'
+            'idList': '123abc',
+            'dateLastActivity': '2023-01-01T12:00:00.000Z'
         }
         return StubResponse(fake_response_data)
     
@@ -77,7 +78,8 @@ def stub(url, params={}):
             fake_response_data = {
                 'id': '456', 
                 'name': 'Created in Integration Test',
-                'idList': params['idList']
+                'idList': params['idList'],
+                'dateLastActivity': '2023-01-01T12:00:00.000Z',
             }
             return StubResponse(fake_response_data)
         
@@ -87,7 +89,8 @@ def stub(url, params={}):
             fake_response_data = {
                 'id': '456', 
                 'name': 'Created in Integration Test',
-                'idList': params['idList']
+                'idList': params['idList'],
+                'dateLastActivity': '2023-01-01T12:00:00.000Z',
             }
             return StubResponse(fake_response_data)
 
