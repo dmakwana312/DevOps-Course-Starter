@@ -104,8 +104,8 @@ def test_index_page(monkeypatch, client):
 
     assert response.status_code == 200
     assert 'Test card' in response.data.decode()
-    assert 'To Do Items' in response.data.decode()
-    assert 'Done Items' in response.data.decode()
+    assert 'To Do Tasks' in response.data.decode()
+    assert 'Done Tasks' in response.data.decode()
 
 @pytest.mark.order2
 def test_add_item(monkeypatch, client):
@@ -120,8 +120,8 @@ def test_add_item(monkeypatch, client):
     response = client.get('/')
     
     assert 'Test card' in response.data.decode()
-    assert 'To Do Items' in response.data.decode()
-    assert 'Done Items' in response.data.decode()
+    assert 'To Do Tasks' in response.data.decode()
+    assert 'Done Tasks' in response.data.decode()
     assert 'Created in Integration Test' in response.data.decode()
 
 @pytest.mark.order3
@@ -136,8 +136,8 @@ def test_mark_item_complete(monkeypatch, client):
     response = client.get('/')
     
     assert 'Test card' in response.data.decode()
-    assert 'To Do Items' in response.data.decode()
-    assert 'Done Items' in response.data.decode()
+    assert 'To Do Tasks' in response.data.decode()
+    assert 'Done Tasks' in response.data.decode()
     assert 'Created in Integration Test' in response.data.decode()
     assert 'id="status_456"  checked' in response.data.decode()
 
@@ -153,8 +153,8 @@ def test_mark_item_incomplete(monkeypatch, client):
     response = client.get('/')
     
     assert 'Test card' in response.data.decode()
-    assert 'To Do Items' in response.data.decode()
-    assert 'Done Items' in response.data.decode()
+    assert 'To Do Tasks' in response.data.decode()
+    assert 'Done Tasks' in response.data.decode()
     assert 'Created in Integration Test' in response.data.decode()
     assert 'id="status_456"  checked' not in response.data.decode()
 
@@ -170,7 +170,7 @@ def test_delete_items(monkeypatch, client):
     response = client.get('/')
     
     assert 'Test card' in response.data.decode()
-    assert 'To Do Items' in response.data.decode()
-    assert 'Done Items' in response.data.decode()
+    assert 'To Do Tasks' in response.data.decode()
+    assert 'Done Tasks' in response.data.decode()
     assert 'Created in Integration Test' not in response.data.decode()
    
