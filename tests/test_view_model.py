@@ -4,7 +4,7 @@ from freezegun import freeze_time
 
 from todo_app.data.Item import Item
 from todo_app.view_model import ViewModel
-from todo_app.data.trello_config import TO_DO_LIST_NAME, DONE_LIST_NAME
+from todo_app.trello_config import TO_DO_LIST_NAME, DONE_LIST_NAME
 
 def test_done_items_when_no_done_item():
     items = [

@@ -1,4 +1,4 @@
-from todo_app.data.trello_config import TO_DO_LIST_NAME, DONE_LIST_NAME
+from todo_app.trello_config import TO_DO_LIST_NAME, DONE_LIST_NAME
 
 class ViewModel:
     def __init__(self, items):

@@ -1,5 +1,5 @@
 import requests
-import todo_app.data.trello_config as config
+import todo_app.trello_config as config
 from todo_app.data.Item import Item
 
 def build_url(endpoint):
