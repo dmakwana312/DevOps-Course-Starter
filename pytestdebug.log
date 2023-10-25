@@ -1,0 +1,956 @@
+versions pytest-7.4.2, python-3.11.4.final.0
+cwd=C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter
+args=('--debug',)
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x000001D9FBD89610>
+    pytest_plugin_registered [hook]
+        plugin: <Session DevOps-Course-Starter exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x000001D9FBD89610>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001D9FB31A050>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001D9FBE93710>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: pdb [assertion]
+    early skip of rewriting module: cmd [assertion]
+    early skip of rewriting module: code [assertion]
+    early skip of rewriting module: codeop [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001D9FBD89610>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\python_path.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=9 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001D9FBE2F750>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=11 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001D9FBE600D0>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=7 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001D9FB31A050>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001D9FBE93710>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001D9FBE38290>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001D9FBE3A0D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001D9FBD89610>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\python_path.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=9 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001D9FBE2F750>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=11 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001D9FBE600D0>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=7 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001D9FB31A050>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001D9FBE93710>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001D9FBE38290>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001D9FBE3A0D0>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x000001D9FBED4F10>
+          manager: <_pytest.config.PytestPluginManager object at 0x000001D9FB5182D0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          start_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter
+          startdir: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter
+      finish pytest_report_header --> [['rootdir: C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter'], ['using: pytest-7.4.2']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument (WindowsPath('C:/Users/Dipesh/Desktop/Corndel/Project Exercise/DevOps-Course-Starter'), []) [collection]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env.template
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env.template
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env.template
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.env.template
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitignore
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitignore
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitignore
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitignore
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitpod.yml
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitpod.yml
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitpod.yml
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.gitpod.yml
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\README.md
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\README.md
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\README.md
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\README.md
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.lock
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.lock
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.lock
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.lock
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.toml
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.toml
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.toml
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\poetry.toml
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pyproject.toml
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pyproject.toml
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pyproject.toml
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pyproject.toml
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pytestdebug.log
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pytestdebug.log
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pytestdebug.log
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\pytestdebug.log
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.git
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.git
+            finish pytest_ignore_collect --> True [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.github
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.github
+            finish pytest_ignore_collect --> True [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.pytest_cache
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.pytest_cache
+            finish pytest_ignore_collect --> True [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.venv
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.venv
+            finish pytest_ignore_collect --> True [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.vscode
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\.vscode
+            finish pytest_ignore_collect --> True [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests
+            finish pytest_ignore_collect --> None [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py
+              pytest_pycollect_makemodule [hook]
+                  parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                  module_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py
+                  path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py
+              finish pytest_pycollect_makemodule --> <Module tests/test_view_model.py> [hook]
+            finish pytest_collect_file --> [<Module tests/test_view_model.py>] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app
+            finish pytest_ignore_collect --> None [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\__init__.py
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\__init__.py
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\__init__.py
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\__init__.py
+              pytest_pycollect_makemodule [hook]
+                  parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                  module_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\__init__.py
+                  path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\__init__.py
+              finish pytest_pycollect_makemodule --> <Package todo_app> [hook]
+            finish pytest_collect_file --> [<Package todo_app>] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data
+            finish pytest_ignore_collect --> None [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+              pytest_pycollect_makemodule [hook]
+                  parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                  module_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+                  path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+              finish pytest_pycollect_makemodule --> <Package data> [hook]
+            finish pytest_collect_file --> [<Package data>] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static
+            finish pytest_ignore_collect --> None [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js
+            finish pytest_ignore_collect --> None [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js\script.js
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js\script.js
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js\script.js
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js\script.js
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates
+            finish pytest_ignore_collect --> None [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\index.html
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\index.html
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\index.html
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\index.html
+            finish pytest_collect_file --> [] [hook]
+            pytest_ignore_collect [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\layout.html
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\layout.html
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                parent: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+                file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\layout.html
+                path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\layout.html
+            finish pytest_collect_file --> [] [hook]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=3 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=3 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Module tests/test_view_model.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module tests/test_view_model.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module tests/test_view_model.py>
+      find_module called for: test_view_model [assertion]
+      matched test file 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\tests\\test_view_model.py' [assertion]
+      _read_pyc(C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\tests\test_view_model.py): out of date [assertion]
+      rewriting WindowsPath('C:/Users/Dipesh/Desktop/Corndel/Project Exercise/DevOps-Course-Starter/tests/test_view_model.py') [assertion]
+      early skip of rewriting module: todo_app [assertion]
+      early skip of rewriting module: todo_app.data [assertion]
+      early skip of rewriting module: todo_app.data.Item [assertion]
+      early skip of rewriting module: todo_app.view_model [assertion]
+      early skip of rewriting module: todo_app.data.trello_config [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module tests/test_view_model.py>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module tests/test_view_model.py>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from 'C:\\Users\\Dipesh\\Desktop\\Corndel\\Project Exercise\\DevOps-Course-Starter\\.venv\\Lib\\site-packages\\_pytest\\assertion\\rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module tests/test_view_model.py>
+            name: Item
+            obj: <class 'todo_app.data.Item.Item'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module tests/test_view_model.py>
+            name: ViewModel
+            obj: <class 'todo_app.view_model.ViewModel'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module tests/test_view_model.py>
+            name: test_done_items_when_no_done_items
+            obj: <function test_done_items_when_no_done_items at 0x000001D9FBEF5120>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x000001D9FBE2F2D0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_done_items_when_no_done_items>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module tests/test_view_model.py>
+            name: test_done_items_when_done_items_exists
+            obj: <function test_done_items_when_done_items_exists at 0x000001D9FBEF5940>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x000001D9FBEF8290>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_done_items_when_done_items_exists>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/test_view_model.py' lenresult=2 outcome='passed'> [hook]
+    genitems <Function test_done_items_when_no_done_items> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_done_items_when_no_done_items>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function test_done_items_when_done_items_exists> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_done_items_when_done_items_exists>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/test_view_model.py' lenresult=2 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package todo_app> [collection]
+      pytest_collectstart [hook]
+          collector: <Package todo_app>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package todo_app>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\app.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\app.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package todo_app>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\app.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\app.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\flask_config.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\flask_config.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package todo_app>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\flask_config.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\flask_config.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\view_model.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\view_model.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package todo_app>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\view_model.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\view_model.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js\script.js
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\static\js\script.js
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\index.html
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\index.html
+        finish pytest_ignore_collect --> None [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\layout.html
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\templates\layout.html
+        finish pytest_ignore_collect --> None [hook]
+      finish pytest_make_collect_report --> <CollectReport 'todo_app/__init__.py' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'todo_app/__init__.py' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package data> [collection]
+      pytest_collectstart [hook]
+          collector: <Package data>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package data>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\Item.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\Item.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package data>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\Item.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\Item.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\session_items.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\session_items.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package data>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\session_items.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\session_items.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_config.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_config.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package data>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_config.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_config.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            collection_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_items.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_items.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package data>
+            file_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_items.py
+            path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter\todo_app\data\trello_items.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'todo_app/data/__init__.py' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'todo_app/data/__init__.py' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          items: [<Function test_done_items_when_no_done_items>, <Function test_done_items_when_done_items_exists>]
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+            items: [<Function test_done_items_when_no_done_items>, <Function test_done_items_when_done_items_exists>]
+            start_path: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter
+            startdir: C:\Users\Dipesh\Desktop\Corndel\Project Exercise\DevOps-Course-Starter
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session DevOps-Course-Starter exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=2>
+      pytest_runtest_protocol [hook]
+          item: <Function test_done_items_when_no_done_items>
+          nextitem: <Function test_done_items_when_done_items_exists>
+        pytest_runtest_logstart [hook]
+            nodeid: tests/test_view_model.py::test_done_items_when_no_done_items
+            location: ('tests\\test_view_model.py', 3, 'test_done_items_when_no_done_items')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function test_done_items_when_no_done_items>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_done_items_when_no_done_items>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='setup' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function test_done_items_when_no_done_items>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function test_done_items_when_no_done_items>
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_done_items_when_no_done_items>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='call' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function test_done_items_when_no_done_items>
+            nextitem: <Function test_done_items_when_done_items_exists>
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_done_items_when_no_done_items>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/test_view_model.py::test_done_items_when_no_done_items' when='teardown' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: tests/test_view_model.py::test_done_items_when_no_done_items
+            location: ('tests\\test_view_model.py', 3, 'test_done_items_when_no_done_items')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+      pytest_runtest_protocol [hook]
+          item: <Function test_done_items_when_done_items_exists>
+          nextitem: None
+        pytest_runtest_logstart [hook]
+            nodeid: tests/test_view_model.py::test_done_items_when_done_items_exists
+            location: ('tests\\test_view_model.py', 12, 'test_done_items_when_done_items_exists')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function test_done_items_when_done_items_exists>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_done_items_when_done_items_exists>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='setup' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function test_done_items_when_done_items_exists>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function test_done_items_when_done_items_exists>
+            pytest_assertrepr_compare [hook]
+                config: <_pytest.config.Config object at 0x000001D9FBD89610>
+                op: ==
+                left: [<todo_app.data.Item.Item object at 0x000001D9FBF0E7D0>]
+                right: [<todo_app.data.Item.Item object at 0x000001D9FBF0F2D0>]
+            finish pytest_assertrepr_compare --> [['[<todo_app.da...01D9FBF0E7D0>] == [<todo_app.da...01D9FBF0F2D0>]', 'At index 0 diff: <todo_app.data.Item.Item object at 0x000001D9FBF0E7D0> != <todo_app.data.Item.Item object at 0x000001D9FBF0F2D0>', 'Use -v to get more diff']] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_done_items_when_done_items_exists>
+            call: <CallInfo when='call' excinfo=<ExceptionInfo AssertionError('assert [<todo_app.da...01D9FBF0E7D0>] == [<todo_app.da...01D9FBF0F2D0>]\n  At index 0 diff: <todo_app....em object at 0x000001D9FBF0E7D0> != <todo_app.data.Item.Item object at 0x000001D9FBF0F2D0>\n  Use -v to get more diff') tblen=24>>
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='call' outcome='failed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='call' outcome='failed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='call' outcome='failed'>
+              config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          finish pytest_report_teststatus --> ('failed', 'F', 'FAILED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_exception_interact [hook]
+            node: <Function test_done_items_when_done_items_exists>
+            call: <CallInfo when='call' excinfo=<ExceptionInfo AssertionError('assert [<todo_app.da...01D9FBF0E7D0>] == [<todo_app.da...01D9FBF0F2D0>]\n  At index 0 diff: <todo_app....em object at 0x000001D9FBF0E7D0> != <todo_app.data.Item.Item object at 0x000001D9FBF0F2D0>\n  Use -v to get more diff') tblen=24>>
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='call' outcome='failed'>
+        finish pytest_exception_interact --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function test_done_items_when_done_items_exists>
+            nextitem: None
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_done_items_when_done_items_exists>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='teardown' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001D9FBD89610>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: tests/test_view_model.py::test_done_items_when_done_items_exists
+            location: ('tests\\test_view_model.py', 12, 'test_done_items_when_done_items_exists')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+    finish pytest_runtestloop --> True [hook]
+    pytest_sessionfinish [hook]
+        session: <Session DevOps-Course-Starter exitstatus=<ExitCode.TESTS_FAILED: 1> testsfailed=1 testscollected=2>
+        exitstatus: 1
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x000001D9FBE38290>
+          exitstatus: 1
+          config: <_pytest.config.Config object at 0x000001D9FBD89610>
+      early skip of rewriting module: pygments [assertion]
+        pytest_report_teststatus [hook]
+            report: <TestReport 'tests/test_view_model.py::test_done_items_when_done_items_exists' when='call' outcome='failed'>
+            config: <_pytest.config.Config object at 0x000001D9FBD89610>
+        finish pytest_report_teststatus --> ('failed', 'F', 'FAILED') [hook]
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x000001D9FBD89610>
+    finish pytest_unconfigure --> [] [hook]
