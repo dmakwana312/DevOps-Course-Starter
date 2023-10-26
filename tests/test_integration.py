@@ -27,9 +27,8 @@ class StubResponse():
         
     def json(self):
         return self.fake_response_data
-    
 
-def stub(url, params={}):
+def get_request_stub(url, params={}):
     test_board_id = os.environ.get('TRELLO_BOARD_ID')
     if url == f'https://api.trello.com/1/boards/{test_board_id}/lists?cards=open':
         fake_response_data = [{
@@ -55,8 +54,9 @@ def stub(url, params={}):
                 'name': 'Done',
             }]
         return StubResponse(fake_response_data)
-    
-    elif url == f'https://api.trello.com/1/cards/':
+
+def post_request_stub(url, params={}):
+    if url == f'https://api.trello.com/1/cards/':
         mocked_items['to_do_items'].append({'id': '456', 'name': 'Created in Integration Test', 'dateLastActivity': '2023-01-01T12:00:00.000Z',})
         fake_response_data = {
             'id': '456', 
@@ -66,12 +66,15 @@ def stub(url, params={}):
         }
         return StubResponse(fake_response_data)
     
-    elif url == f'https://api.trello.com/1/cards/456':
+def put_delete_stub(url, params={}):
+    if url == f'https://api.trello.com/1/cards/456':
 
+        # deletion of item
         if params.get('idList') == None:
             mocked_items['to_do_items'].pop()
             return StubResponse({})
         
+        # marking item as complete
         elif params['idList'] == '456def':
             completedItem = mocked_items['to_do_items'].pop()
             mocked_items['done_items'].append(completedItem)
@@ -83,6 +86,7 @@ def stub(url, params={}):
             }
             return StubResponse(fake_response_data)
         
+        # marking item as incomplete
         elif params['idList'] == '123abc':
             incompleteItem = mocked_items['done_items'].pop()
             mocked_items['to_do_items'].append(incompleteItem)
@@ -99,7 +103,7 @@ def stub(url, params={}):
 @pytest.mark.order1
 def test_index_page(monkeypatch, client):
     # This replaces any call to requests.get with our own function
-    monkeypatch.setattr(requests, 'get', stub)
+    monkeypatch.setattr(requests, 'get', get_request_stub)
     response = client.get('/')
 
     assert response.status_code == 200
@@ -111,8 +115,8 @@ def test_index_page(monkeypatch, client):
 def test_add_item(monkeypatch, client):
     
     # This replaces any call to requests.get with our own function
-    monkeypatch.setattr(requests, 'get', stub)
-    monkeypatch.setattr(requests, 'post', stub)
+    monkeypatch.setattr(requests, 'get', get_request_stub)
+    monkeypatch.setattr(requests, 'post', post_request_stub)
     response = client.post('/addToDo', data={'to_do_title': 'Created in Integration Test'})
 
     assert response.status_code == 302
@@ -127,8 +131,8 @@ def test_add_item(monkeypatch, client):
 @pytest.mark.order3
 def test_mark_item_complete(monkeypatch, client):
     # This replaces any call to requests.get with our own function
-    monkeypatch.setattr(requests, 'get', stub)
-    monkeypatch.setattr(requests, 'put', stub)
+    monkeypatch.setattr(requests, 'get', get_request_stub)
+    monkeypatch.setattr(requests, 'put', put_delete_stub)
     response = client.post('/complete_item', data={'itemId': '456', 'status': 'true'})
 
     assert response.status_code == 201
@@ -144,8 +148,8 @@ def test_mark_item_complete(monkeypatch, client):
 @pytest.mark.order4
 def test_mark_item_incomplete(monkeypatch, client):
     # This replaces any call to requests.get with our own function
-    monkeypatch.setattr(requests, 'get', stub)
-    monkeypatch.setattr(requests, 'put', stub)
+    monkeypatch.setattr(requests, 'get', get_request_stub)
+    monkeypatch.setattr(requests, 'put', put_delete_stub)
     response = client.post('/complete_item', data={'itemId': '456', 'status': 'false'})
 
     assert response.status_code == 201
@@ -161,8 +165,8 @@ def test_mark_item_incomplete(monkeypatch, client):
 @pytest.mark.order5
 def test_delete_items(monkeypatch, client):
     # This replaces any call to requests.get with our own function
-    monkeypatch.setattr(requests, 'get', stub)
-    monkeypatch.setattr(requests, 'delete', stub)
+    monkeypatch.setattr(requests, 'get', get_request_stub)
+    monkeypatch.setattr(requests, 'delete', put_delete_stub)
     response = client.post('/deleteItem', data={'itemId': '456'})
 
     assert response.status_code == 201
