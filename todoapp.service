@@ -3,7 +3,7 @@ Description=My To-Do App
 Requires=todoapp.socket
 
 [Service]
-User=ec2-user
+User=todoapp
 WorkingDirectory=/opt/todoapp
 EnvironmentFile=/opt/todoapp/.env
-ExecStart=/home/ec2-user/.local/bin/poetry run gunicorn -b 0.0.0.0:80 'app:create_app()' --chdir /opt/todoapp/todo_app 
+ExecStart=/bin/poetry/bin/poetry run gunicorn -b 0.0.0.0:80 'app:create_app()' --chdir /opt/todoapp/todo_app 
