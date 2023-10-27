@@ -1,17 +1,8 @@
 - name: Install To-Do App on new web server
   hosts: nodes
   remote_user: ec2-user
-  vars_prompt:
-
-    - name: trello_api_key
-      prompt: Enter Trello API Key
-
-    - name: trello_api_token
-      prompt: Enter Trello API Token
-
-    - name: trello_board_id
-      prompt: Enter Board ID
-
+  vars_files:
+    - vault.yaml
   tasks:
   - name: Install git and python3
     ansible.builtin.yum:
