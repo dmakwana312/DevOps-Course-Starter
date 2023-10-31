@@ -75,3 +75,28 @@ Tests can be run from the terminal by running `poetry run pytest`
 If you want to skip running the end-to-end tests, you can do this by running `poetry run pytest tests`. Similarly, if you only want to run the end-to-end tests, you can do this by running `poetry run pytest tests_e2e`
 
 You can also run tests individually within VSCode by following the instructions on [this page](https://code.visualstudio.com/docs/python/testing#_configure-tests)
+
+## Provision VM via Ansible
+
+***Following instructions should be run on control node only***
+
+1. Create a file called 'vault.yaml'
+2. Use the following as a template, but replace placeholders with actual values
+```yaml
+trello_api_key: <trello_api_key>
+trello_api_token: <trello_api_token>
+trello_board_id: <trello_board_id>
+```
+3. Create a file called vault-pass and add a line with what you would like the pasword for the vault to be
+4. Execute the following to encrypt the vault.yaml file created during step 2
+```bash
+ansible-vault encrypt --vault-password-file vault-pass vault.yaml
+```
+5. Run the playbook with following command
+```bash
+ansible-playbook playbook.yaml -i inventory.ini --vault-password-file vault-pass
+```
+6. If you need to view the content of the vault, you can run the following to decrypt
+```bash
+ansible-vault decrypt --vault-password-file vault-pass vault.yaml
+```

@@ -1,0 +1,65 @@
+- name: Install To-Do App on new web server
+  hosts: nodes
+  remote_user: ec2-user
+  environment:
+    POETRY_HOME: /bin/poetry
+  vars_files:
+    - vault.yaml
+  tasks:
+  - name: Create todoapp user to run service
+    ansible.builtin.user:
+      name: todoapp
+      group: ec2-user
+    become: yes
+  - name: Install git and python3
+    ansible.builtin.yum:
+      name: 
+        - git
+        - python3
+      state: present
+    become: yes
+  - name: Install poetry if it does not exist already
+    ansible.builtin.shell: 
+      cmd: curl -sSL https://install.python-poetry.org | python3 - >> output.txt
+      creates: /bin/poetry
+    become: yes
+  - name: Create /opt/todoapp folder
+    ansible.builtin.file:
+      path: /opt/todoapp
+      state: directory
+      owner: ec2-user
+      group: ec2-user
+    become: yes
+  - name: Clone ToDo app code to folder (exercise-4 branch only)
+    ansible.builtin.git:
+      repo: https://github.com/dmakwana312/DevOps-Course-Starter.git
+      dest: /opt/todoapp
+      version: exercise-4
+  - name: Change the working directory to /opt/todoapp and run install dependencies
+    ansible.builtin.command: /bin/poetry/bin/poetry install 
+    args:
+      chdir: /opt/todoapp
+    become: yes
+  - name: Create .env file from .env.j2 template
+    ansible.builtin.template:
+      src: /home/ec2-user/.env.j2
+      dest: /opt/todoapp/.env
+      owner: ec2-user
+      group: ec2-user
+      mode: '0644'
+  - name: Copy todoapp.service from Control Node to Managed Nodes
+    ansible.builtin.copy:
+      src: /home/ec2-user/todoapp.service
+      dest: /etc/systemd/system/
+      owner: root
+      group: root
+      mode: '744'
+    become: yes
+  - name: Start the webapp service
+    ansible.builtin.systemd:
+      name: todoapp
+      state: restarted
+      daemon_reload: true
+    become: yes
+
+      
