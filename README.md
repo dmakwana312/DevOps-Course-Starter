@@ -100,3 +100,27 @@ ansible-playbook playbook.yaml -i inventory.ini --vault-password-file vault-pass
 ```bash
 ansible-vault decrypt --vault-password-file vault-pass vault.yaml
 ```
+
+## Run in Docker
+
+#### Development
+
+1. Build the image with the following command
+```bash
+docker build --target development --tag todo-app:dev .
+```
+2. Run the container
+```bash
+docker run --env-file .env -p 5000:80 --mount type=bind,source="$(pwd)"/todo_app,target=/app/todo_app todo-app:dev
+```
+
+#### Production
+
+1. Build the image with the following command
+```bash
+docker build --target production --tag todo-app:prod .
+```
+2. Run the container
+```bash
+docker run --env-file .env --publish 5000:80 todo-app:prod
+```
