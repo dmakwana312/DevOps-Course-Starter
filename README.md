@@ -129,3 +129,11 @@ ansible-vault decrypt --vault-password-file vault-pass vault.yaml
    ```bash
    docker run --env-file .env --publish 5000:80 todo-app:prod
    ```
+
+#### Debug
+
+If you wish to create a container, but not start the application itself to debug, the following command can be used. You can also connect the container to VSCode to debug through that
+
+```bash
+docker compose -f docker-compose-debug.yaml up
+```

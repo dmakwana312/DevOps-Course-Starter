@@ -20,3 +20,8 @@ FROM base as development
 
 RUN poetry config virtualenvs.create false --local && poetry install
 ENTRYPOINT poetry run flask run --host=0.0.0.0 --port=$PORT
+
+FROM base as debug
+
+RUN poetry config virtualenvs.create false --local && poetry install
+ENTRYPOINT tail -f /dev/null

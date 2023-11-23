@@ -2,7 +2,7 @@ version: "3"
 
 services:
   todo_app:
-    image: todo-app:dev
+    image: todo-app:debug
     ports:
       - 5000:80
     volumes:
