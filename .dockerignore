@@ -6,7 +6,6 @@ README.md
 todoapp.service
 todoapp.socket
 poetry.toml
-poetry.lock
 
 .github
 .pytest_cache
