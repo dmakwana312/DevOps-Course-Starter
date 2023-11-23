@@ -1,0 +1,16 @@
+.env.template
+inventory.ini
+playbook.yaml
+pytestdebug.log
+README.md
+todoapp.service
+todoapp.socket
+poetry.toml
+poetry.lock
+
+.github
+.pytest_cache
+.venv
+.vscode
+
+Dockerfile
