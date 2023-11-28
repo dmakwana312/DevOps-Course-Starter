@@ -5,6 +5,7 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
 from todo_app import app
 from todo_app.data.Item import Item
@@ -53,7 +54,11 @@ def delete_trello_board(board_id):
 
 @pytest.fixture(scope="module")
 def driver():
-    with webdriver.Chrome() as driver:
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    with webdriver.Chrome(options=chrome_options) as driver:
         yield driver
 
 @pytest.mark.order1
@@ -116,7 +121,7 @@ def test_task_journey_mark_incomplete(driver, app_with_temp_board):
     assert check_element_exists_by_id(driver, item_id)
     assert not check_item_status(driver, item_id)
 
-@pytest.mark.order3
+@pytest.mark.order4
 def test_task_journey_mark_delete(driver, app_with_temp_board):
     driver.get('http://localhost:5000/')
     
