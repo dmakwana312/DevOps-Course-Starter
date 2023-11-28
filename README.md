@@ -100,3 +100,40 @@ ansible-playbook playbook.yaml -i inventory.ini --vault-password-file vault-pass
 ```bash
 ansible-vault decrypt --vault-password-file vault-pass vault.yaml
 ```
+
+## Run in Docker
+
+#### Development
+
+1. Build the image with the following command
+   ```bash
+   docker build --target development --tag todo-app:dev .
+   ```
+2. The container can be run via 2 ways
+    1. Using a docker command 
+       ```bash
+       docker run --env-file .env --publish 5000:80 --mount type=bind,source="$(pwd)"/todo_app,target=/app/todo_app/todo_app todo-app:dev
+       ```
+    2. Using Docker Compose, which will also start test runners (this includes unit, integration and end-to-end tests) that will continously rerun tests when a change is detected **Note that for docker compose to work you will require the test images to be created. This can either be done manually in a similar way to the previous step, or add '--build' to the below command**
+       ```bash
+       docker compose up
+       ```
+
+#### Production
+
+1. Build the image with the following command
+   ```bash
+   docker build --target production --tag todo-app:prod .
+   ```
+2. Run the container
+   ```bash
+   docker run --env-file .env --publish 5000:80 todo-app:prod
+   ```
+
+#### Debug
+
+If you wish to create a container, but not start the application itself to debug, the following command can be used. You can also connect the container to VSCode to debug through that
+
+```bash
+docker compose -f docker-compose-debug.yaml up
+```
