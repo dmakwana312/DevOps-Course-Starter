@@ -1,4 +1,5 @@
 .env.template
+**/.env
 inventory.ini
 playbook.yaml
 pytestdebug.log
